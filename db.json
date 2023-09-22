@@ -5,6 +5,7 @@
       "imageUrl": "../assets/produtosImg/playstation5.jpg",
       "price": "500.00",
       "id": 1,
+      "type":"console",
       "description": "Console de jogos de última geração."
     },
     {
@@ -12,6 +13,7 @@
       "imageUrl": "../assets/produtosImg/xboxSeriesX.jpg",
       "price": "520.00",
       "id": 2,
+      "type":"console",
       "description": "Console de videogame da Microsoft."
     },
     {
@@ -19,6 +21,7 @@
       "imageUrl": "../assets/produtosImg/nitendoSwitch.jpg",
       "price": "300.00",
       "id": 3,
+      "type":"console",
       "description": "Console de videogame híbrido da Nintendo."
     },
     {
@@ -26,6 +29,7 @@
       "imageUrl": "../assets/produtosImg/playstation4.jpg",
       "price": "300.00",
       "id": 4,
+      "type":"console",
       "description": "Console de jogos de geração anterior da Sony."
     },
     {
@@ -33,6 +37,7 @@
       "imageUrl": "../assets/produtosImg/xboxOne.jpg",
       "price": "250.00",
       "id": 5,
+      "type":"console",
       "description": "Console de videogame da Microsoft."
     },
     {
@@ -40,6 +45,7 @@
       "imageUrl": "../assets/produtosImg/nitendoSwitchLite.jpg",
       "price": "220.00",
       "id": 6,
+      "type":"console",
       "description": "Versão compacta do Nintendo Switch."
     },
     {
@@ -47,6 +53,7 @@
       "imageUrl": "../assets/produtosImg/macbookPro.jpg",
       "price": "1200.00",
       "id": 7,
+      "type":"notebook",
       "description": "Laptop poderoso da Apple."
     },
     {
@@ -54,6 +61,7 @@
       "imageUrl": "../assets/produtosImg/xps13.jpg",
       "price": "1100.00",
       "id": 8,
+      "type":"notebook",
       "description": "Laptop premium da Dell."
     },
     {
@@ -61,6 +69,7 @@
       "imageUrl": "../assets/produtosImg/lenovoThinkpad.jpg",
       "price": "950.00",
       "id": 9,
+      "type":"notebook",
       "description": "Laptop confiável da Lenovo."
     },
     
@@ -69,6 +78,7 @@
       "imageUrl": "../assets/produtosImg/asusZenbookPro.jpg",
       "price": "1000.00",
       "id": 11,
+      "type":"notebook",
       "description": "Laptop fino e leve da Asus."
     },
     {
@@ -76,6 +86,7 @@
       "imageUrl": "../assets/produtosImg/acerPredator.jpg",
       "price": "900.00",
       "id": 12,
+      "type":"notebook",
       "description": "Laptop para jogos da Acer."
     },
     {
@@ -83,34 +94,24 @@
       "imageUrl": "../assets/produtosImg/iphone13ProMax.jpg",
       "price": "800.00",
       "id": 13,
-      "description": "Último modelo de smartphone da Apple."
+      "type":"eletronicos",      "description": "Último modelo de smartphone da Apple."
     },
+    
     {
-      "name": "Fone de Ouvido Bluetooth",
-      "imageUrl": "../assets/produtosImg/foneBluetooth.jpg",
-      "price": "50.00",
-      "id": 14,
-      "description": "Fones de ouvido sem fio."
-    },
-    {
-      "name": "Câmera DSLR Canon EOS",
+      "name": "Câmera Canon EOS",
       "imageUrl": "../assets/produtosImg/camera.jpg",
       "price": "600.00",
       "id": 15,
+      "type":"eletronicos",
       "description": "Câmera profissional da Canon."
     },
+    
     {
-      "name": "Samsung Galaxy Tab S7",
-      "imageUrl": "../assets/produtosImg/tabS7.jpg",
-      "price": "350.00",
-      "id": 16,
-      "description": "Tablet Android da Samsung."
-    },
-    {
-      "name": "Máquina de Lavar Roupa LG",
+      "name": "Máquina de Lavar",
       "imageUrl": "../assets/produtosImg/maquinaDeLavar.jpg",
       "price": "400.00",
       "id": 17,
+      "type":"eletronicos",
       "description": "Máquina de lavar roupa de qualidade da LG."
     },
     {
@@ -118,13 +119,15 @@
       "imageUrl": "../assets/produtosImg/maquinaCafe.jpg",
       "price": "100.00",
       "id": 18,
+      "type":"eletronicos",
       "description": "Cafeteira de cápsulas da Nespresso."
     },
     {
-      "name": "Aspirador de Pó Robô",
+      "name": "Aspirador Robô",
       "imageUrl": "../assets/produtosImg/aspiradorPortatil.jpg",
       "price": "300.00",
       "id": 19,
+      "type":"eletronicos",
       "description": "Aspirador de pó autônomo."
     },
     {
@@ -132,6 +135,7 @@
       "imageUrl": "../assets/produtosImg/bicicletaEletrica.jpg",
       "price": "800.00",
       "id": 20,
+      "type":"eletronicos",
       "description": "Bicicleta com assistência elétrica."
     }
   ]
