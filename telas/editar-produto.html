@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-ordem das telass: index>login>editar>adcionar-produtos>editar
 <html lang="Pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/editar.css">
     <title>Editar produtos</title>
   </head>
   <body>
@@ -11,24 +13,29 @@ ordem das telass: index>login>editar>adcionar-produtos>editar
       <nav>
         <div class="logo-barra">
           <div class="logo">
-            <img src="../assets/img/logo.svg" alt="logo" />
-            <input type="text" placeholder="O que deseja encontrar?" />
+            <img
+              src="../assets/img/logo.svg"
+              alt="logo"
+              class="logo-img-barra"
+            />
+
+            <input
+              type="text"
+              placeholder="O que deseja encontrar?"
+              class="input-lupa"
+            />
           </div>
         </div>
-
-        <div class="login">
-          <a href="../telas/login.html"
-            ><button type="submit">Login</button></a
-          >
-        </div>
+       
+        
       </nav>
     </header>
-    <section class="produtos" data-produtos>
+    <section class="produtos" >
       <div class="all-product">
         <h1>Todos os produtos</h1>
-        <button>Adicionar Produtos</button>
-        <a href="../telas/adicionar-produto.html">aa</a>
+        <button>Adicionar Produto</button>
       </div>
+      <div class="produtos-div" data-produto></div>
     </section>
     <section class="contato">
       <div class="logo-img">
@@ -46,8 +53,13 @@ ordem das telass: index>login>editar>adcionar-produtos>editar
       <div class="form">
         <p>Fale conosco</p>
         <div class="label-float">
-          <input type="text" name="Nome" id="Nome" class="input-nome" />
-          <label for="Nome" class="label-nome">Nome</label>
+          <input
+            type="text"
+            name="Nome"
+            id="Nome"
+            class="input-nome"
+            placeholder="Digite seu nome aqui"
+          />
         </div>
         <textarea
           name="mensagem"
@@ -57,9 +69,20 @@ ordem das telass: index>login>editar>adcionar-produtos>editar
           placeholder="Escreva sua Mensagem"
         ></textarea>
 
-        <button>Enviar Mensagem</button>
+        <button class="enviar-msg">Enviar Mensagem</button>
       </div>
     </section>
-    <footer>Desenvolvido por linkedin</footer>
+    <footer>
+      <h2>
+        Desenvolvido por
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/wellington-ds-silva/"
+          >@wellington</a
+        >
+      </h2>
+      <h3>2023</h3>
+    </footer>
+    <script type="module" src="../controllers/mostrar-produtos-editar.js"></script>
   </body>
 </html>

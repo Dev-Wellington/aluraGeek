@@ -3,7 +3,7 @@
     {
       "name": "PlayStation 5",
       "imageUrl": "../assets/produtosImg/playstation5.jpg",
-      "price": "500.00",
+      "price": 500.00,
       "id": 1,
       "type":"console",
       "description": "Console de jogos de última geração."
@@ -11,7 +11,7 @@
     {
       "name": "Xbox Series X",
       "imageUrl": "../assets/produtosImg/xboxSeriesX.jpg",
-      "price": "520.00",
+      "price": 520.00,
       "id": 2,
       "type":"console",
       "description": "Console de videogame da Microsoft."
@@ -19,7 +19,7 @@
     {
       "name": "Nintendo Switch",
       "imageUrl": "../assets/produtosImg/nitendoSwitch.jpg",
-      "price": "300.00",
+      "price": 300.00,
       "id": 3,
       "type":"console",
       "description": "Console de videogame híbrido da Nintendo."
@@ -27,7 +27,7 @@
     {
       "name": "PlayStation 4",
       "imageUrl": "../assets/produtosImg/playstation4.jpg",
-      "price": "300.00",
+      "price": 300.00,
       "id": 4,
       "type":"console",
       "description": "Console de jogos de geração anterior da Sony."
@@ -35,7 +35,7 @@
     {
       "name": "Xbox One",
       "imageUrl": "../assets/produtosImg/xboxOne.jpg",
-      "price": "250.00",
+      "price": 250.00,
       "id": 5,
       "type":"console",
       "description": "Console de videogame da Microsoft."
@@ -43,7 +43,7 @@
     {
       "name": "Nintendo Switch Lite",
       "imageUrl": "../assets/produtosImg/nitendoSwitchLite.jpg",
-      "price": "220.00",
+      "price": 220.00,
       "id": 6,
       "type":"console",
       "description": "Versão compacta do Nintendo Switch."
@@ -51,7 +51,7 @@
     {
       "name": "MacBook Pro",
       "imageUrl": "../assets/produtosImg/macbookPro.jpg",
-      "price": "1200.00",
+      "price": 1200.00,
       "id": 7,
       "type":"notebook",
       "description": "Laptop poderoso da Apple."
@@ -59,7 +59,7 @@
     {
       "name": "Dell XPS 13",
       "imageUrl": "../assets/produtosImg/xps13.jpg",
-      "price": "1100.00",
+      "price": 1100.00,
       "id": 8,
       "type":"notebook",
       "description": "Laptop premium da Dell."
@@ -67,7 +67,7 @@
     {
       "name": "Lenovo ThinkPad",
       "imageUrl": "../assets/produtosImg/lenovoThinkpad.jpg",
-      "price": "950.00",
+      "price": 950.00,
       "id": 9,
       "type":"notebook",
       "description": "Laptop confiável da Lenovo."
@@ -76,7 +76,7 @@
     {
       "name": "Asus ZenBook",
       "imageUrl": "../assets/produtosImg/asusZenbookPro.jpg",
-      "price": "1000.00",
+      "price": 1000.00,
       "id": 11,
       "type":"notebook",
       "description": "Laptop fino e leve da Asus."
@@ -84,7 +84,7 @@
     {
       "name": "Acer Predator Helios",
       "imageUrl": "../assets/produtosImg/acerPredator.jpg",
-      "price": "900.00",
+      "price": 900.00,
       "id": 12,
       "type":"notebook",
       "description": "Laptop para jogos da Acer."
@@ -92,7 +92,7 @@
     {
       "name": "IPhone 13 Pro Max",
       "imageUrl": "../assets/produtosImg/iphone13ProMax.jpg",
-      "price": "800.00",
+      "price": 800.00,
       "id": 13,
       "type":"eletronicos",      "description": "Último modelo de smartphone da Apple."
     },
@@ -100,7 +100,7 @@
     {
       "name": "Câmera Canon EOS",
       "imageUrl": "../assets/produtosImg/camera.jpg",
-      "price": "600.00",
+      "price": 600.00,
       "id": 15,
       "type":"eletronicos",
       "description": "Câmera profissional da Canon."
@@ -109,7 +109,7 @@
     {
       "name": "Máquina de Lavar",
       "imageUrl": "../assets/produtosImg/maquinaDeLavar.jpg",
-      "price": "400.00",
+      "price": 400.00,
       "id": 17,
       "type":"eletronicos",
       "description": "Máquina de lavar roupa de qualidade da LG."
@@ -117,7 +117,7 @@
     {
       "name": "Cafeteira Nespresso",
       "imageUrl": "../assets/produtosImg/maquinaCafe.jpg",
-      "price": "100.00",
+      "price": 100.00,
       "id": 18,
       "type":"eletronicos",
       "description": "Cafeteira de cápsulas da Nespresso."
@@ -125,7 +125,7 @@
     {
       "name": "Aspirador Robô",
       "imageUrl": "../assets/produtosImg/aspiradorPortatil.jpg",
-      "price": "300.00",
+      "price": 300.00,
       "id": 19,
       "type":"eletronicos",
       "description": "Aspirador de pó autônomo."
@@ -133,7 +133,7 @@
     {
       "name": "Bicicleta Elétrica",
       "imageUrl": "../assets/produtosImg/bicicletaEletrica.jpg",
-      "price": "800.00",
+      "price": 800.00,
       "id": 20,
       "type":"eletronicos",
       "description": "Bicicleta com assistência elétrica."

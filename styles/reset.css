@@ -91,18 +91,7 @@ nav {
   padding: 0.75rem 3rem;
 }
 /*Produtos*/
-/*<div class="produto">
-produtos-itens            
-<img
-              src="${imageUrl}"
-              alt=""
-              width="160px"
-              height="160px"
-            />
-            <h1 class="product-name">${name}</h1>
-            <p class="preco">R$${price}</p>
-            <a href="{}" class="ver-produto">Ver produto</a>
-          </div>`*/
+
 .product-div{
  display: flex;
  justify-content: space-between;
