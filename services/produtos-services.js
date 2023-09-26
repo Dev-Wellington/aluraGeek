@@ -1,4 +1,4 @@
-//get
+//get teste
 
 const listaProduto = () => {
   return fetch("https://65132ba08e505cebc2e9a843.mockapi.io/produto")
