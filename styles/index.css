@@ -1,33 +1,81 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  box-sizing: border-box;
-}
 
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: row;
-}
-.logo-barra {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.banner {
-  height: 50vh;
+.promocao {
+ 
+  height: 373px;
+  
   background-image: url("../assets/img/banner.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center ;
+  position:static;
+  display: block;
+  
+  
 }
+
+.banner {
+  padding: 0;
+  width: 100vw;
+  height: 50%;
+  position: relative;
+  top: 40%;
+  left: 15%;
+  max-width: 75%;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.promocao {
+  color: var(--branco);
+}
+.banner > h1 {
+  font-size: 48px;
+}
+.banner > h4 {
+  font-size: 24px;
+}
+.banner > button {
+  font-size: 20px;
+ width: 12%;
+ height: 40%;
+ margin-bottom: 1%;
+ color: var(--branco);
+ background-color:var(--button--background) ;
+}
+.sessao-produtos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 15px;
+}
+.div-verTudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--button--background);
+  font-weight: 700;
+
+}
+.div-verTudo h2{
+  color: var(--color-padrao);
+ 
+}
+.verTudo{
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+h2 {
+  font-weight: bold;
+  font-size: 1.75em;
+}
+
+.product-section h2{
+ font-weight: 800;
+  
+}
+
+

@@ -1,24 +1,20 @@
 import { produtosServicos } from "../services/produtos-services.js";
 
-const consoles = document.querySelector("[data-console]");
-//renderiza os consoles
-const notebook = document.querySelector("[data-notebook]");
-//renderiza os note
-const eletronicos = document.querySelector("[data-eletronicos]");
-//renderiza os eletronicos em geral
-const todosOsProdutos = document.querySelector("[data-teste]");
+
+const todosOsProdutos = document.querySelector("[data-produto]");
 
 const novoProduto = (name, imageUrl, price) => {
   const card = document.createElement("div");
   const conteudo = `
-    <div class="produto">
+    <div class="produto ">
         <div class="produto-itens">
         <img
         src="${imageUrl}"
         alt=""
-        width="145px"
-        height="145px"
-    />
+        width="174px"
+        height="176px"/>
+        <div>        <button class="delete"><img src="../assets/img/editDeleteImg/deletar.svg"/></button>
+        <button class="edit"><img src="../assets/img/editDeleteImg/editar.svg"/></button></div>
     <h1 class="product-name">${name}</h1>
     <p class="preco">R$${price}</p>
     <a href="{}" class="ver-produto">Ver produto</a>
@@ -30,7 +26,7 @@ const novoProduto = (name, imageUrl, price) => {
   return card;
 };
 
-async function buscarProdutos() {
+async function buscarTodosProdutos() {
   try {
     const produtosa = await produtosServicos.listaProduto();
 
@@ -40,18 +36,11 @@ async function buscarProdutos() {
         elemento.imageUrl,
         elemento.price
       );
-
-      if (elemento.type === "console") {
-        consoles.appendChild(card);
-      } else if (elemento.type === "notebook") {
-        notebook.appendChild(card);
-      } else {
-        eletronicos.appendChild(card);
-      }
+      todosOsProdutos.appendChild(card);
     });
   } catch (error) {
     console.log("Erro ao procurar produtos disponiveis", error);
   }
 }
 
-buscarProdutos();
+buscarTodosProdutos();

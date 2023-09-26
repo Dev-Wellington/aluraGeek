@@ -1,0 +1,81 @@
+/**ordem das telass: index>login>editar>adcionar-produtos>editar/
+
+/*button com uma imagem dentro */
+.produtos{
+  padding-top: 3%;
+  padding-left: 152px;
+  padding-right: 152px;
+  background-color: #f5f5f5;
+}
+.all-product{
+    
+    display: flex;
+    justify-content: space-between;
+}
+.all-product h1{
+font-size: 2em;
+font-weight: 800;
+color: var(--color-padrao);
+}
+.all-product button{
+    background-color: var(--button--background);
+    color: var(--branco);
+    font-size: 16px;
+    font-weight: 400;
+    width: 15%;
+}
+.produtos-div{
+  
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+
+
+/*<div class="produto">
+        <div class="produto-itens">
+        <img
+        src="${imageUrl}"
+        alt=""
+        width="145px"
+        height="145px"
+    />
+    <h1 class="product-name">${name}</h1>
+    <p class="preco">R$${price}</p>
+    <a href="{}" class="ver-produto">Ver produto</a>
+        </div>
+        
+    </div>`;*/
+.produto-itens{
+
+  padding-bottom: 30%;
+}
+
+.produto-itens div{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 32%;
+  inset: -170px 0px 0 110px  ; 
+ 
+ z-index: 2;
+}
+.produto-itens{
+  
+  box-sizing: border-box;
+}
+.delete,.edit{
+  background-color:transparent;
+  
+  
+}
+.delete img,.edit img{
+  height: 24px;
+  width: 24px;
+ 
+  border-radius: 30%;
+}

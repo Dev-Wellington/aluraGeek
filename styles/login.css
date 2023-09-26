@@ -1,0 +1,57 @@
+:root {
+  --barra-busca: #f5f5f5;
+  --color-barra-busca: #a2a2a2;
+  --button--background: #2a7ae4;
+  --hover-login-button: #5595e9;
+  --color-login-button: #2a7ae4;
+  --form-contato-background: #eaf2fd;
+  --branco: #fff;
+  --color-padrao: #464646;
+}
+.form-login-section{
+ 
+  height: 70vh;
+}
+.form-login{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.form-login{
+  gap:30px;
+}
+/*Estilização do form*/
+h2{
+  font-size: 1.25rem;
+  color: var(--color-padrao);
+}
+.form-login-section{
+  background-color: var(--barra-busca);
+}
+
+input{
+  width: 45%;
+  height: 12%;
+  font-size: 1rem;
+}
+button{
+  width: 45%;
+  height: 12%;
+  background-color: var(--button--background);
+  color: var(--branco);
+  font-size: 1.30rem;
+}
+button{
+  cursor: pointer;
+}
+input{
+  color: var(--color-padrao);
+   padding-left: 2%;
+}
+
+input:focus{
+ outline:none;
+}

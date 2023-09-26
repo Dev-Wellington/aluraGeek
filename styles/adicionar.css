@@ -1,0 +1,33 @@
+.form-section{
+    padding: 3% 152px 3% 152px;
+    background-color:var(--barra-busca) ;
+}
+h1{
+    font-size:1.75rem; 
+    color: var(--color-padrao);
+}
+.form-adc{
+    display: flex;
+    flex-direction: column;
+   gap: 20px; gap a dciona espaço entre os elementos , apagar depois 
+}
+.form-adc input,.form-button{
+    height: 53px;
+}
+.form-adc textarea{
+    height: 63px;
+}
+.form-adc input{
+    background-color:var(--branco) ;
+    color: ;
+
+}
+.form-adc input:hover{
+    font-size: ;
+    color: ;
+}
+.form-button{
+    background-color:var(--button--background );
+    color: var(--branco);
+
+}
