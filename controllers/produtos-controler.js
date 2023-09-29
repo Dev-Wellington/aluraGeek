@@ -6,7 +6,7 @@ const notebook = document.querySelector("[data-notebook]");
 //renderiza os note
 const eletronicos = document.querySelector("[data-eletronicos]");
 //renderiza os eletronicos em geral
-const todosOsProdutos = document.querySelector("[data-teste]");
+
 
 const novoProduto = (name, imageUrl, price) => {
   const card = document.createElement("div");
