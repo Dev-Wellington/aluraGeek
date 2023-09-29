@@ -1,7 +1,7 @@
 import { produtosServicos } from "../services/produtos-services.js";
 const form = document.querySelector("[data-form]");
 form.addEventListener("submit", (evento) => {
-  evento.preventDefault(); 
+  evento.preventDefault();
   const url = document.querySelector("[data-url]").value;
   const nome = document.querySelector("[data-nome]").value;
   const preco = document.querySelector("[data-preco]").value;
@@ -11,7 +11,7 @@ form.addEventListener("submit", (evento) => {
   produtosServicos
     .criarProduto(nome, url, preco, categoria, descricao)
     .then((resposta) => {
-      window.location.href = "../telas/index.html";
+      window.location.href = "../index.html";
       console.log(resposta);
     })
     .catch((error) => {
