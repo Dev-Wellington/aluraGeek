@@ -1,28 +1,41 @@
 .form-section{
     padding: 3% 152px 3% 152px;
     background-color:var(--barra-busca) ;
+    display: flex;
+    justify-content: center;
 }
 h1{
+    align-self: flex-start;
     font-size:1.75rem; 
     color: var(--color-padrao);
 }
 .form-adc{
+    width: 50%;
     display: flex;
     flex-direction: column;
-   gap: 20px; gap a dciona espaço entre os elementos , apagar depois 
+    
+   gap: 20px; 
+   
 }
 .form-adc input,.form-button{
     height: 53px;
+    width: 100%;
+
 }
 .form-adc textarea{
     height: 63px;
+   width: 100%;
+   padding:4% 0 2% 0;
 }
 .form-adc input{
+    padding-left: 3%;
     background-color:var(--branco) ;
     color: ;
 
 }
+
 .form-adc input:hover{
+    
     font-size: ;
     color: ;
 }
@@ -30,4 +43,7 @@ h1{
     background-color:var(--button--background );
     color: var(--branco);
 
+}
+.form-adc input:focus{
+    outline: none;
 }

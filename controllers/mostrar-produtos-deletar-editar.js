@@ -1,9 +1,8 @@
 import { produtosServicos } from "../services/produtos-services.js";
 
-
 const todosOsProdutos = document.querySelector("[data-produto]");
 
-const novoProduto = (name, imageUrl, price) => {
+const novoProduto = (name, imageUrl, price, id) => {
   const card = document.createElement("div");
   const conteudo = `
     <div class="produto ">
@@ -13,7 +12,7 @@ const novoProduto = (name, imageUrl, price) => {
         alt=""
         width="174px"
         height="176px"/>
-        <div>        <button class="delete"><img src="../assets/img/editDeleteImg/deletar.svg"/></button>
+        <div>        <button data-delete  class="delete" data-produto-id="${id}"><img src="../assets/img/editDeleteImg/deletar.svg"/></button>
         <button class="edit"><img src="../assets/img/editDeleteImg/editar.svg"/></button></div>
     <h1 class="product-name">${name}</h1>
     <p class="preco">R$${price}</p>
@@ -34,8 +33,22 @@ async function buscarTodosProdutos() {
       const card = novoProduto(
         elemento.name,
         elemento.imageUrl,
-        elemento.price
+        elemento.price,
+        elemento.id
       );
+
+      const botaoDelete = card.querySelector("[data-delete]");
+      botaoDelete.addEventListener("click", () => {
+        produtosServicos
+          .deletarProdutos(elemento.id)
+          .then(() => {
+            window.location.href = "../telas/admin.html";
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      });
+
       todosOsProdutos.appendChild(card);
     });
   } catch (error) {

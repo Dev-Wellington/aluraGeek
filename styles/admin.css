@@ -50,7 +50,11 @@ color: var(--color-padrao);
         </div>
         
     </div>`;*/
-.produto-itens{
+.adicionar-produto{
+  color: #f5f5f5;
+  
+}
+    .produto-itens{
 
   padding-bottom: 30%;
 }
@@ -76,6 +80,6 @@ color: var(--color-padrao);
 .delete img,.edit img{
   height: 24px;
   width: 24px;
- 
+ cursor: pointer;
   border-radius: 30%;
 }

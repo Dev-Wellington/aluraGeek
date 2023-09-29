@@ -33,13 +33,13 @@
       </nav>
     </header>
     <section class="form-section">
-      <form action="" class="form-adc">
+      <form action="" class="form-adc" data-form>
         <h1>Adicionar novo produto</h1>
-        <input type="url" placeholder="Url da imagem"/>
-        <input type="text" placeholder="Categoria" />
-        <input type="text" placeholder="Nome do produto" />
-        <input type="number" placeholder="Preço do produto"/>
-        <textarea name="" id="" cols="0" rows="0"></textarea>
+        <input required type="url" placeholder="Url da imagem" data-url />
+        <input required type="text" placeholder="Categoria"data-categoria />
+        <input required type="text" placeholder="Nome do produto" data-nome/>
+        <input required type="number" placeholder="Preço do produto" data-preco/>
+        <textarea required name="" id="" cols="0" rows="0" placeholder="Digite a descrição aqui" data-descricao></textarea>
         <button class="form-button" type="submit">Adicionar Produto</button>
       </form>
     </section>
@@ -76,7 +76,7 @@
           placeholder="Escreva sua Mensagem"
         ></textarea>
 
-        <button class="enviar-msg">Enviar Mensagem</button>
+        <button class="enviar-msg" type="submit">Enviar Mensagem</button>
       </div>
     </section>
     <footer>
@@ -90,6 +90,6 @@
       </h2>
       <h3>2023</h3>
     </footer>
-    <script type="module" src="../controllers/produtos-controler.js"></script>
+    <script type="module" src="../controllers/cria-produtos-controler.js"></script>
   </body>
 </html>

@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/editar.css">
+    
+    <link rel="stylesheet" href="../styles/admin.css">
     <title>Editar produtos</title>
   </head>
   <body>
@@ -33,7 +33,7 @@
     <section class="produtos" >
       <div class="all-product">
         <h1>Todos os produtos</h1>
-        <button>Adicionar Produto</button>
+        <button > <a href="../telas/adicionar-produto.html" class="adicionar-produto">Adicionar Produto</a></button>
       </div>
       <div class="produtos-div" data-produto></div>
     </section>
@@ -82,7 +82,9 @@
         >
       </h2>
       <h3>2023</h3>
+     
     </footer>
-    <script type="module" src="../controllers/mostrar-produtos-editar.js"></script>
+    <script type="module" src="../controllers/mostrar-produtos-deletar-editar.js" async></script>
+   
   </body>
 </html>
