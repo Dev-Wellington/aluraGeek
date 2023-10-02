@@ -34,19 +34,19 @@ const deletarProdutos = (id) => {
     },
   });
 };
-const editarProdutos = (id, p) => {
+const editarProdutos = (id, lista) => {
   return fetch(`https://65132ba08e505cebc2e9a843.mockapi.io/produto/${id}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(p),
+    body: JSON.stringify(lista),
   })
     .then((resposta) => {
       if (!resposta.ok) {
         throw new Error(`Erro na requisição: ${resposta.status}`);
       }
-      return resposta; // Alterado para retornar a resposta diretamente
+      return resposta; 
     })
     .catch((error) => {
       console.error("Erro na edição do produto:", error);

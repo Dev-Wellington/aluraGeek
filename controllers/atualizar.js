@@ -21,7 +21,7 @@ async function atualizar() {
           description: descricao.value,
           price: preco.value,
         };
-        console.log(lista);
+      
         produtosServicos
           .editarProdutos(produtoID, lista)
           .then((resposta) => {
