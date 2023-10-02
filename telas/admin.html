@@ -6,9 +6,44 @@
     <link rel="stylesheet" href="../styles/reset.css">
     
     <link rel="stylesheet" href="../styles/admin.css">
+    <link rel="stylesheet" href="../styles/modal.css">
     <title>Editar produtos</title>
   </head>
   <body>
+    <div class="modal">
+      <div class="conteudo">
+        <section class="form-section-admin">
+          <form action="" class="form-adc" data-form-att>
+            <h1 class="h1-modal">Atualizar produto</h1>
+            <input required type="url" placeholder="Url da nova imagem" data-url-att />
+            
+            <input
+              required
+              type="text"
+              placeholder="Faça a alteração do nome do produto aqui"
+              data-nome-att
+            />
+            <input
+              required
+              type="number"
+              placeholder="Digite o novo preço do produto"
+              data-preco-att
+            />
+            <textarea
+              required
+              name=""
+              id=""
+              cols="0"
+              rows="0"
+              placeholder="Digite a descrição aqui"
+              data-descricao-att
+            ></textarea>
+            <button  data-button-att class="form-button" type="submit">Atualizar produto</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </div>
     <header>
       <nav>
         <div class="logo-barra">
@@ -30,13 +65,20 @@
         
       </nav>
     </header>
+    
     <section class="produtos" >
+      
       <div class="all-product">
+
         <h1>Todos os produtos</h1>
-        <button > <a href="../telas/adicionar-produto.html" class="adicionar-produto">Adicionar Produto</a></button>
+        <button class="ola"> Adicionar Produto</a></button>
+        
       </div>
       <div class="produtos-div" data-produto></div>
+        
+      
     </section>
+
     <section class="contato">
       <div class="logo-img">
         <img src="../assets/img/logo.svg" alt="logo" />
@@ -84,7 +126,8 @@
       <h3>2023</h3>
      
     </footer>
-    <script type="module" src="../controllers/mostrar-produtos-deletar-editar.js" async></script>
-   
+    <script type="module" src="../controllers/mostrar-produtos-admin-deletar.js" async></script>
+  <script type="module" src="../controllers/atualizar.js"></script>
+  
   </body>
 </html>

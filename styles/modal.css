@@ -1,0 +1,71 @@
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 3;
+    background-color:var(--barra-busca) ;
+    
+    overflow: auto;
+    
+}
+.modal .conteudo{
+    background-color:var(--barra-busca) ;
+    
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+
+.form-section-admin{
+    width: 100vw;
+    height: 100vh;
+    padding: 3% 152px 3% 152px;
+    background-color:var(--barra-busca) ;
+    display: flex;
+    justify-content: center;
+}
+.h1-modal{
+    align-self: flex-start;
+    font-size:1.75rem; 
+    color: var(--color-padrao);
+}
+.form-adc{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   gap: 20px; 
+   
+}
+.form-adc input,.form-button{
+    height: 53px;
+    width: 100%;
+
+}
+.form-adc textarea{
+    max-height: 106px;
+    min-height: 106px;
+    max-width: 100%;
+  
+   padding:4% 0 2% 0;
+}
+.form-adc input{
+    padding-left: 3%;
+    background-color:var(--branco) ;
+ 
+
+}
+
+.form-adc input:hover{
+    
+}
+.form-button{
+    background-color:var(--button--background );
+    color: var(--branco);
+
+}
+.form-adc input:focus{
+    outline: none;
+}
+
+

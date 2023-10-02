@@ -12,7 +12,6 @@ form.addEventListener("submit", (evento) => {
     .criarProduto(nome, url, preco, categoria, descricao)
     .then((resposta) => {
       window.location.href = "../index.html";
-      console.log(resposta);
     })
     .catch((error) => {
       console.log(error);
