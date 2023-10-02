@@ -1,5 +1,5 @@
 import { produtosServicos } from "../services/produtos-services.js";
-
+let idEDit;
 const todosOsProdutos = document.querySelector("[data-produto]");
 
 const novoProduto = (name, imageUrl, price, id) => {
@@ -13,7 +13,7 @@ const novoProduto = (name, imageUrl, price, id) => {
         width="174px"
         height="176px"/>
         <div>        <button data-delete  class="delete" data-produto-id="${id}"><img src="../assets/img/editDeleteImg/deletar.svg"/></button>
-        <button class="edit"><img src="../assets/img/editDeleteImg/editar.svg"/></button></div>
+        <button data-edit class="edit"><img src="../assets/img/editDeleteImg/editar.svg"/></button></div>
     <h1 class="product-name">${name}</h1>
     <p class="preco">R$${price}</p>
     <a href="{}" class="ver-produto">Ver produto</a>
@@ -48,6 +48,45 @@ async function buscarTodosProdutos() {
             console.log(error);
           });
       });
+
+      const botaoEditar = card.querySelector("[data-edit]");
+
+      const mudarModal = () => {
+        const modal = document.querySelector(".modal");
+        const estiloAplicadoModal = modal.style.display;
+        if (estiloAplicadoModal == "block") {
+          modal.style.display = "none";
+        } else {
+          modal.style.display = "block";
+        }
+      };
+      botaoEditar.addEventListener("click", () => {
+        mudarModal();
+      });
+
+      const botoesEditar = card.querySelectorAll("[data-edit]");
+
+      if (botoesEditar) {
+        botoesEditar.forEach((botao) => {
+          botao.addEventListener("click", () => {
+            fetch(
+              `https://65132ba08e505cebc2e9a843.mockapi.io/produto/${elemento.id}`
+            )
+              .then((response) => response.json())
+              .then((data) => {
+                document.querySelector("[data-nome-att]").value = data.name;
+                document.querySelector("[data-url-att]").value = data.imageUrl;
+                document.querySelector("[data-preco-att]").value = data.price;
+                document.querySelector("[data-descricao-att]").value =
+                  data.description;
+              })
+              .catch((error) => {
+                console.error("Erro ao obter dados do item: " + error);
+              });
+          });
+        });
+      }
+      
 
       todosOsProdutos.appendChild(card);
     });

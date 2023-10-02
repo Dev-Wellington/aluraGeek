@@ -27,19 +27,37 @@ const criarProduto = (name, imageUrl, price, type, description) => {
   });
 };
 const deletarProdutos = (id) => {
-  return  fetch(
-    `https://65132ba08e505cebc2e9a843.mockapi.io/produto/${id}`,
-    {
-      method: "DELETE",
-      headers: {
-        "Content-type": "application/json",
-      },
-    }
-  );
+  return fetch(`https://65132ba08e505cebc2e9a843.mockapi.io/produto/${id}`, {
+    method: "DELETE",
+    headers: {
+      "Content-type": "application/json",
+    },
+  });
 };
+const editarProdutos = (id, p) => {
+  return fetch(`https://65132ba08e505cebc2e9a843.mockapi.io/produto/${id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(p),
+  })
+    .then((resposta) => {
+      if (!resposta.ok) {
+        throw new Error(`Erro na requisição: ${resposta.status}`);
+      }
+      return resposta; // Alterado para retornar a resposta diretamente
+    })
+    .catch((error) => {
+      console.error("Erro na edição do produto:", error);
+      throw error;
+    });
+};
+
 
 export const produtosServicos = {
   listaProduto,
   criarProduto,
   deletarProdutos,
+  editarProdutos,
 };
