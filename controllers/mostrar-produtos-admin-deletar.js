@@ -1,5 +1,5 @@
 import { produtosServicos } from "../services/produtos-services.js";
-let idEDit;
+
 const todosOsProdutos = document.querySelector("[data-produto]");
 
 const novoProduto = (name, imageUrl, price, id) => {
@@ -13,7 +13,7 @@ const novoProduto = (name, imageUrl, price, id) => {
         width="174px"
         height="176px"/>
         <div>        <button data-delete  class="delete" data-produto-id="${id}"><img src="../assets/img/editDeleteImg/deletar.svg"/></button>
-        <button data-edit class="edit"><img src="../assets/img/editDeleteImg/editar.svg"/></button></div>
+        <button data-id=${id} data-edit class="edit"><img src="../assets/img/editDeleteImg/editar.svg"/></button></div>
     <h1 class="product-name">${name}</h1>
     <p class="preco">R$${price}</p>
     <a href="{}" class="ver-produto">Ver produto</a>
@@ -36,6 +36,7 @@ async function buscarTodosProdutos() {
         elemento.price,
         elemento.id
       );
+      
 
       const botaoDelete = card.querySelector("[data-delete]");
       botaoDelete.addEventListener("click", () => {
@@ -48,6 +49,15 @@ async function buscarTodosProdutos() {
             console.log(error);
           });
       });
+
+      
+      
+
+
+
+
+
+
 
       const botaoEditar = card.querySelector("[data-edit]");
 
@@ -86,8 +96,9 @@ async function buscarTodosProdutos() {
           });
         });
       }
-      
 
+      // Selecione o botão pelo seletor (você pode usar qualquer seletor que seja apropriado)
+    
       todosOsProdutos.appendChild(card);
     });
   } catch (error) {
