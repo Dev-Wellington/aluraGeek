@@ -1,5 +1,4 @@
-{
-  "produto": [
+ [
     {
       "name": "PlayStation 5",
       "imageUrl": "../assets/produtosImg/playstation5.jpg",
@@ -139,4 +138,4 @@
       "description": "Bicicleta com assistência elétrica."
     }
   ]
-}
+

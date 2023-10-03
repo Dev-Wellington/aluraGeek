@@ -42,6 +42,7 @@ h1{
 .form-button{
     background-color:var(--button--background );
     color: var(--branco);
+    cursor: pointer;
 
 }
 .form-adc input:focus{
